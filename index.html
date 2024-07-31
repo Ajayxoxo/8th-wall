@@ -4,18 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit Counter</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            fetch('/visit')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('counter').innerText = `Visit count: ${data.visitCount}`;
-                })
-                .catch(error => {
-                    console.error('Error fetching visit count:', error);
-                });
-        });
-    </script>
 </head>
 <body>
     <h1>Welcome to the Visit Counter Page</h1>
